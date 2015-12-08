@@ -2,3 +2,7 @@
     local-name: ar_tools
     uri: https://github.com/RyodoTanaka/ar_tools.git
     version: master
+- git:
+    local-name: joy_twist
+    uri: https://github.com/RyodoTanaka/joy_twist.git
+    version: master
