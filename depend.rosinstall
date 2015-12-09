@@ -1,0 +1,4 @@
+- git:
+    local-name: ar_tools
+    uri: https://github.com/RyodoTanaka/ar_tools.git
+    version: master
