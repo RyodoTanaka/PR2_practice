@@ -1,0 +1,23 @@
+<launch>
+
+  <!-- arguments -->
+  <arg name="joy_config" default="$(find joy_twist)/config/ps3.yaml" />
+  <arg name="robot_config" default="$(find pr2_practice_controller)/config/pr2_robot_config.yaml" />
+  <arg name="joy_dev" default="/dev/input/js0" />
+
+
+  <!-- joy_node -->
+  <node respawn="true" pkg="joy" type="joy_node" name="joy">
+    <param name="dev" type="string" value="$(arg joy_dev)" />
+    <param name="deadzone" value="0.12" />
+    <param name="autorepeat_rate" value="25" />
+  </node>
+
+  <!-- teleop_twist_joy -->
+  <node pkg="joy_twist"   type="joy_twist_node"  name="joy_twist_joy" >
+    <rosparam command="load" ns="/joy_con" file="$(arg joy_config)" />
+    <rosparam command="load" ns="/robot_conf" file="$(arg robot_config)" />
+    <remap from="/cmd_vel" to="/base_controller/command"/>
+  </node>
+
+</launch>
