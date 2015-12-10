@@ -1,0 +1,4 @@
+<launch>
+  <!-- push armarker_description to factory and spawn robot in gazebo -->
+  <node name="spawn_armarker" pkg="gazebo_ros" type="spawn_model" args="-file $(find pr2_practice_gazebo)/models/urdf/ar_marker.urdf -urdf -x 0.5 -y 0.5 -z 0.01 -model armarker_model" respawn="false" output="screen" />
+</launch>
