@@ -6,3 +6,11 @@
     local-name: joy_twist
     uri: https://github.com/RyodoTanaka/joy_twist.git
     version: master
+- git:
+    local-name: camera_umd
+    uri: https://github.com/RyodoTanaka/camera_umd.git
+    version: master
+- git:
+    local-name: pr2_gazebo_practice/ez_utils
+    uri: https://github.com:smjro/ez_utils.git
+    version: master
