@@ -9,13 +9,15 @@
     <visual>
       <origin xyz="0 0 0" rpy="1.57 0 0" />
       <geometry>
-		<mesh filename="package://pr2_practice_gazebo/models/meshes/ar_marker.dae" />
+		<mesh filename="package://pr2_practice_gazebo/models/meshes/ar_marker.dae"
+			  scale="0.080 0.080 0.080"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="1.57 0 0" />
       <geometry>
-		<mesh filename="package://pr2_practice_gazebo/models/meshes/ar_marker.dae" />
+		<mesh filename="package://pr2_practice_gazebo/models/meshes/ar_marker.dae"
+			  scale="0.080 0.080 0.080"/>
       </geometry>
     </collision>
   </link>
